@@ -1,0 +1,271 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+header {  
+    background: #4a3535;  
+    color: #ffffff;  
+    padding: 20px;  
+    text-align: center;  
+}  
+
+nav {  
+    margin-top: 10px;  
+}  
+
+nav ul {  
+    list-style: none;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;  
+}  
+
+nav li {  
+    margin: 0 15px; /* Space between nav items */  
+}  
+
+nav a {  
+    color: #ffffff;  
+    text-decoration: none;  
+    font-size: 18px;  
+}  
+
+nav a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}  
+
+/* Responsive adjustments */  
+@media (max-width: 600px) {  
+    nav ul {  
+        flex-direction: column; /* Stack items on small screens */  
+    }  
+    nav li {  
+        margin: 10px 0; /* Adjust margin for stacked items */  
+    }  
+}  
+
+.container {  
+    display: flex;  
+    overflow-x: auto; /* فعال کردن اسکرول افقی */  
+    padding: 20px;  
+    white-space: nowrap; /* حالت خطی برای محصولات */  
+}  
+
+.product {  
+    flex: 0 0 auto; /* عدم گسترش افقی برای محصولات */  
+    width: 200px; /* عرض ثابت برای هر محصول */  
+    margin-right: 20px; /* فاصله بین محصولات */  
+    border: 1px solid #ccc; /* حاشیه دور محصولات */  
+    border-radius: 10px; /* گرد کردن گوشه‌ها */  
+    padding: 10px;  
+    text-align: center;  
+}  
+
+img {  
+    width: 100%; /* تنظیم اندازه عکس به 100% عرض محصول */  
+    border-radius: 5px; /* گرد کردن گوشه‌های عکس */  
+}  
+
+h1 {  
+    font-size: 20px; /* اندازه عنوان محصول */  
+    color: #ff0000; /* رنگ آبی برای قیمت */  
+    margin: 10px 0;  
+}  
+
+p {  
+    font-size: 14px; /* اندازه متن توضیحات */  
+    color: #666; /* رنگ خاکستری برای توضیحات */  
+}  
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #4a3535;
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+} */
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card .emoji {
+    font-size: 80px;
+    line-height: 1;
+    color: #FFD700;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover .emoji {
+    transform: rotate(360deg);
+}
+
+.contact-card h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.contact-card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.contact-card a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #FFD700;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-card a:hover {
+    background-color: #FFC700;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+
+
+
+.slider {  
+    position: relative;  
+    max-width: 600px;  
+    margin: auto;  
+    overflow: hidden;  
+    border: 2px solid #ccc;  
+    border-radius: 8px;  
+}  
+.slides {  
+    display: flex;  
+    transition: transform 0.5s ease;  
+}  
+.slide {  
+    min-width: 100%;  
+    box-sizing: border-box;  
+}  
+img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 8px;  
+}  
+.button {  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    background-color: rgba(255, 255, 255, 0.7);  
+    border: none;  
+    cursor: pointer;  
+    padding: 10px;  
+    margin: 10px;  
+    border-radius: 5px;  
+    font-size: 18px;  
+}  
+.prev {  
+    left: 10px;  
+}  
+.next {  
+    right: 10px;  
+} 
+
+
+
+
+@media (max-width: 768px) {
+    /* h1 {
+        margin-top: 40px;
+        font-size: 36px;
+    } */
+
+    .contact-card {
+        padding: 30px;
+    }
+
+    .contact-card h2 {
+        font-size: 24px;
+    }
+
+    .contact-card p {
+        font-size: 16px;
+    }
+    .contact-card a {
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-card {
+        padding: 20px;
+    }
+
+    .contact-card h2 {
+        font-size: 22px;
+    }
+
+    .contact-card p {
+        font-size: 14px;
+    }
+
+    .contact-card a {
+        font-size: 14px;
+        padding: 8px 16px;
+        border-radius: 20px;
+    }
+}
